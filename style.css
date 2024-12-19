@@ -1,0 +1,167 @@
+body {
+    background-color: rgb(245, 231, 242);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+#border {
+    border: 2px solid;
+    width: 60px;
+    margin-top: 0;
+    color: rgb(195, 150, 39);
+}
+
+.btns {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 8px 15px 8px 15px;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(195, 150, 39);
+    border: 1px solid rgb(195, 150, 39);
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: rgb(195, 150, 39);
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 80px 0px 0px 50px;
+    margin-bottom: -40px;
+}
+
+img {
+    width: 190px;
+    height: 165px;
+    border: 5px solid rgb(195, 150, 39);
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex: 1 1 40vw;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    max-width: 550px;
+}
+
+.text {
+    margin-left: 20px;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.prize {
+    color: rgb(195, 150, 39);
+    font-size: 20px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.line {
+    border: 1px dotted rgb(105, 100, 100);
+    margin-top: 5px;
+}
+
+.info {
+    font-size: 18px;
+    color: rgb(138, 64, 125);
+    line-height: 1.5;
+}
+
+@media screen and (max-width:768px) {
+    .wrapper {
+        flex: 1 1 40vw !important;
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 30px;
+
+    }
+
+    .btns {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn {
+        margin-top: 20px;
+    }
+
+    img {
+        width: 300px;
+        height: 173px;
+    }
+
+    .text {
+        margin: 0;
+        width: 305px;
+    }
+
+    main {
+        padding: 0 !important;
+    }
+
+    header {
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .prize {
+        font-size: 15px;
+    }
+    .info {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .wrapper {
+        max-width: 100%;
+        flex: none;
+    }
+
+    main {
+        padding-right: 50px;
+    }
+
+}
